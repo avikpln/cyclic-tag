@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="YOUR NAME" />
+    <meta name="description" content="DESCRIBE THE GAME HERE" />
+
+    <!-- To disable browser cache: -->
+    <meta http-equiv="Cache-Control" content="no-store" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="module" src="script/main.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript.</noscript>
+
+    <title>Cyclic Tag</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- <base href="URL"> -->
+  </head>
+
+  <body>
+    <main>
+      <!-- GAME FRAME -->
+      <div id="game-frame">
+        <!-- GAME TITLE -->
+        <h1 id="game-title">Cyclic Tag</h1>
+
+        <!-- GAME PANEL -->
+        <div id="game-panel">
+          <!-- PLAY -->
+          <button
+            type="button"
+            id="play-btn"
+            class="btn"
+            onclick="this.blur();"
+          >
+            Play
+          </button>
+
+          <!-- PAUSE -->
+          <button
+            type="button"
+            id="pause-btn"
+            class="btn"
+            onclick="this.blur();"
+          >
+            Pause
+          </button>
+
+          <!-- RESET -->
+          <button
+            type="button"
+            id="reset-btn"
+            class="btn"
+            onclick="this.blur();"
+          >
+            Reset
+          </button>
+
+          <!-- STOP -->
+          <button
+            type="button"
+            id="stop-btn"
+            class="btn"
+            onclick="this.blur();"
+          >
+            Stop
+          </button>
+        </div>
+
+        <!-- GAME STATUS -->
+        <div id="game-status"></div>
+
+        <!-- GAME CANVAS -->
+        <canvas id="game-canvas" width="300" height="300">
+          Your browser does not support canvas.
+        </canvas>
+      </div>
+
+      <!-- IMAGE -->
+      <img
+        id="cover-image"
+        src="images/cover.jpg"
+        width="128"
+        height="128"
+        style="display: none"
+      />
+
+      <!-- AUDIO -->
+      <!-- Free Sound Effects: https://www.zapsplat.com/ -->
+      <audio
+        id="play-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="pause-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="resume-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="gameover-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="gamewin-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="reset-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+      <audio
+        id="stop-audio"
+        src="audio/stroke.mp3"
+        preload="auto"
+        controls="none"
+      ></audio>
+    </main>
+  </body>
+</html>
